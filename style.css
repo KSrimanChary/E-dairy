@@ -1,0 +1,135 @@
+/* Base Styles for Dark Theme */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background: linear-gradient(45deg, #333, #555);
+  color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.left-panel, .right-panel {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.left-panel {
+  flex: 1;
+  max-width: 400px;
+}
+
+.right-panel {
+  flex: 2;
+}
+
+.bio-section, .todo-section, .diary-section {
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+input[type="text"], input[type="date"], textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(45deg, #0066cc, #0099ff);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #004d99, #0066cc);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: #aaa;
+  font-size: 0.9em;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.todo-list ul, .diary-log ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list ul li, .diary-log ul li {
+  background: #333;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn, .delete-all-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover, .delete-all-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    height: auto;
+  }
+}

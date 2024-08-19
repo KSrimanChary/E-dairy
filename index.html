@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Diary by Sriman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>E-Diary by Sriman</h1>
+  </header>
+  <div class="container">
+    <div class="left-panel">
+      <div class="bio-section">
+        <h2>BIO AND PERSONAL DETAILS</h2>
+        <div class="profile-picture">
+          <img id="profilePic" src="profileimage.jpeg" alt="Profile Picture">
+          <input type="file" id="uploadPic" accept="image/*">
+        </div>
+        <div class="profile-info">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name">
+  
+          <label for="hobbies">Hobbies:</label>
+          <textarea id="hobbies" placeholder="Enter your hobbies"></textarea>
+  
+          <label for="bio">Biography:</label>
+          <textarea id="bio" placeholder="Enter your biography"></textarea>
+  
+          <label for="contact">Contact Information:</label>
+          <input type="text" id="contact" placeholder="Enter your contact info">
+        </div>
+        <button id="saveProfile">Save Profile</button>
+      </div>
+      <div class="todo-section">
+        <h2>To-Do List</h2>
+        <div class="todo-input">
+          <input type="text" id="taskTitle" placeholder="Task title">
+          <input type="text" id="taskDescription" placeholder="Task description">
+          <input type="date" id="taskDueDate">
+          <select id="taskPriority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <button id="addTask">Add Task</button>
+        </div>
+        <div class="todo-list">
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="diary-section">
+        <h2>DIARY</h2>
+        <div class="diary-entry">
+          <label for="entryDate">Date:</label>
+          <input type="date" id="entryDate">
+  
+          <label for="entryText">Entry:</label>
+          <textarea id="entryText" placeholder="Write your diary entry..."></textarea>
+  
+          <label for="entryTag">Tags:</label>
+          <input type="text" id="entryTag" placeholder="Add tags (e.g., Work, Personal)">
+  
+          <button id="saveEntry">Save Entry</button>
+        </div>
+        <div class="diary-log">
+          <h3>Diary Log</h3>
+          <ul id="entryList"></ul>
+          <button id="deleteAllEntries" class="delete-all-btn">Delete All Entries</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 K Sriman Chary. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
